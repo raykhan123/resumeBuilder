@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
         trim:true
     },
     email:{
-        type:Number,
+        type:String,
         require:true,
         trim:true
     },
@@ -30,12 +30,6 @@ const userSchema = new mongoose.Schema({
         require:true,
         trim:true
     },
-    confirmPasword:{
-        type:String,
-        require:true,
-        trim:true
-    },
-   
     isDeleted:{
         type:Boolean,
         default:false,
